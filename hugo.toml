@@ -1,0 +1,11 @@
+baseURL = "https://keryx-io.github.io/hermyx/"
+languageCode = "de-de"
+title = "Hermyx"
+disableKinds = ["taxonomy", "term", "sitemap"]
+
+[outputs]
+  home = ["html", "rss"]
+
+[outputFormats.rss]
+  mediaType = "application/rss"
+  baseName = "rss"

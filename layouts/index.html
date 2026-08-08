@@ -1,0 +1,13 @@
+{{ partial "head.html" . }}
+{{ partial "header.html" . }}
+{{ range .Site.RegularPages.GroupByDate "2006-01-02" }}
+<h3>{{ (index .Pages 0).Date.Format "2. January 2006" }}</h3>
+
+<ul>
+{{ range .Pages }}
+<li><a href="{{ .Permalink }}">→</a> {{ .Content }}</li>
+{{ end }}
+</ul>
+{{ end }}
+<p><div style="text-align:center"><a href="{{ "posts" | absURL }}">alle Beiträge</a></div>
+<div style="text-align:right">Kein Newsletter. Keine Werbung. Kein Tracking.</div></html>

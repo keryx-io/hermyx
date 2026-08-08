@@ -1,0 +1,9 @@
+{{ partial "head.html" . }}
+{{ partial "header.html" . }}
+<h3>{{ .Date.Format "2. January 2006" }}</h3>
+
+<ul>
+<li><a href="{{ .Permalink }}">→</a> {{ .Content }}</li>
+</ul>
+<p><a href="{{ .Site.BaseURL }}">zurück</a></p>
+<div style="text-align:right">Kein Newsletter. Keine Werbung. Kein Tracking.</div></html>
